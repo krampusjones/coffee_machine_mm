@@ -51,8 +51,9 @@ def is_transaction_successful(money_received,drink_cost):
     if money_received == drink_cost:
         return True
     elif money_received > drink_cost:
-        change_amount = money_received - drink_cost
-        print(f"Your change is: {change_amount}")
+        change_amount = round(money_received - drink_cost,2)
+        print(f"Your change is: ${change_amount}")
+        return True
     return False
 
 #Code starts here
