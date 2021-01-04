@@ -74,4 +74,4 @@ else:
     if is_transaction_successful(payment, drink["cost"]):
         print("Making drink!")
     else:
-        print("Something went wong")
+        print("Something went wrong")
